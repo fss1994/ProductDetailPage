@@ -41,15 +41,15 @@
 - (void)dealData:(NSDictionary *)dict
 {
 
-    self.goodDetailViewModel = [ZHBGoodDetailViewModel viewModelWithGoodInfoData:[dict objectForKey:@"data"]];
-    // standard 父类 赋值 bottonsValue.fatherType,可以放到网络类
-    for (ZHBProductAttrsInfoModel *attrsInfo in self.goodDetailViewModel.productAttrsInfoArray) {
-        
-        // 遍历大属性下的bottons 红色等属性
-        for (ZHBBottonsValueModel *bottonsValue in attrsInfo.value) {
-            bottonsValue.fatherType = attrsInfo.type;
-        }
-    }
+//    self.goodDetailViewModel = [ZHBGoodDetailViewModel viewModelWithGoodInfoData:[dict objectForKey:@"data"]];
+//    // standard 父类 赋值 bottonsValue.fatherType,可以放到网络类
+//    for (ZHBProductAttrsInfoModel *attrsInfo in self.goodDetailViewModel.productAttrsInfoArray) {
+//
+//        // 遍历大属性下的bottons 红色等属性
+//        for (ZHBBottonsValueModel *bottonsValue in attrsInfo.value) {
+//            bottonsValue.fatherType = attrsInfo.type;
+//        }
+//    }
     // 初始状态
 //    [self ConfirmInitialSelectedState];
     
