@@ -368,20 +368,6 @@ didClickWithBasicInfoTableViewCellClickType:(BasicInfoTableViewCellClickType)bas
         [_productTableView registerNib:[UINib nibWithNibName:KZHBGoodDetailBasicInfoTableViewCell bundle:nil]
                     forCellReuseIdentifier:KZHBGoodDetailBasicInfoTableViewCell];
 
-
-        // ipx 往下调一点.
-//        _productTableView.contentInset = UIEdgeInsetsMake(UIScreen.statusBarHeight, 0, 0, 0);
-//        _productTableView.contentInset = UIEdgeInsetsMake(UIScreen.navigationBarHeight, 0, 0, 0);
-
-//        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"11.0")) {
-//#if defined(__IPHONE_11_0)
-//#pragma clang diagnostic push
-//#pragma clang diagnostic ignored "-Wunguarded-availability-new"
-//            _productTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-//#pragma clang pop
-//#endif
-//        }
-
     }
     return _productTableView;
 }

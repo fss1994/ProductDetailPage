@@ -21,8 +21,8 @@
 }
 
 - (IBAction)btnClick:(id)sender {
+ 
     ZHBGoodDetailViewController *vc = [[ZHBGoodDetailViewController alloc] init];
-    
     [self.navigationController pushViewController:vc animated:YES];
 }
 
