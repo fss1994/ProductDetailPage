@@ -41,17 +41,7 @@
 - (void)dealData:(NSDictionary *)dict
 {
 
-//    self.goodDetailViewModel = [ZHBGoodDetailViewModel viewModelWithGoodInfoData:[dict objectForKey:@"data"]];
-//    // standard 父类 赋值 bottonsValue.fatherType,可以放到网络类
-//    for (ZHBProductAttrsInfoModel *attrsInfo in self.goodDetailViewModel.productAttrsInfoArray) {
-//
-//        // 遍历大属性下的bottons 红色等属性
-//        for (ZHBBottonsValueModel *bottonsValue in attrsInfo.value) {
-//            bottonsValue.fatherType = attrsInfo.type;
-//        }
-//    }
-    // 初始状态
-//    [self ConfirmInitialSelectedState];
+
     
     self.buyBottomView.hidden = NO;
     
@@ -62,7 +52,7 @@
     // 网址确认
     
     self.goodDetailViewModel.isExistCanSale = YES;
-    self.goodDetailViewModel.status = @"6";
+    self.goodDetailViewModel.status = @"5";
     
     self.goodDetailViewModel.productDesURL = @"https://www.baidu.com";
     self.goodDetailViewModel.productNormURL = @"https://www.baidu.com";
@@ -112,8 +102,7 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
 
-    NSDictionary *data = [self.goodDetailDataController requestData];
-    [self dealData:data];
+    [self dealData:nil];
 }
 
 

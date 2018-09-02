@@ -52,6 +52,18 @@ static CGFloat const kBottomButtonViewHeight    = 50.f; // 底部视图高度（
     [self.allContentView addSubview:self.productTableView];
     [self.bannerScroll addSubview:self.powerfulBannerView];
 
+    // 没数据加个提示吧..
+    if (IsNilOrNull(self.viewModel.productInfo)) {
+        
+        UILabel *label = [[UILabel alloc] init];
+        label.text = @"没有数据, 就试试左右滑动吧";
+        [self.view addSubview:label];
+        [label mas_makeConstraints:^(MASConstraintMaker *make) {
+            
+            make.center.mas_equalTo(self.view);
+        }];
+    }
+
 }
 - (void)viewWillAppear:(BOOL)animated
 {

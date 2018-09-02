@@ -9,7 +9,4 @@
 
 @interface ZHBGoodDetailDataController : NSObject
 
-
-- (NSDictionary *)requestData;
-
 @end

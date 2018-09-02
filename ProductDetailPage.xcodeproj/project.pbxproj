@@ -343,22 +343,22 @@
 		4B3E17E421217BE8002F453D /* GoodDetail */ = {
 			isa = PBXGroup;
 			children = (
-				4B3E17E521217BE8002F453D /* ChildComment */,
-				4B3E185921217BE8002F453D /* ChildDetail */,
-				4B3E180521217BE8002F453D /* ChildProduct */,
 				4B3E185C21217BE8002F453D /* GoodDetailContainer */,
+				4B3E180521217BE8002F453D /* ChildProduct(商品详情) */,
+				4B3E17E521217BE8002F453D /* ChildComment(评论) */,
+				4B3E185921217BE8002F453D /* ChildDetail(网页) */,
 			);
 			path = GoodDetail;
 			sourceTree = "<group>";
 		};
-		4B3E17E521217BE8002F453D /* ChildComment */ = {
+		4B3E17E521217BE8002F453D /* ChildComment(评论) */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ChildComment;
+			path = "ChildComment(评论)";
 			sourceTree = "<group>";
 		};
-		4B3E180521217BE8002F453D /* ChildProduct */ = {
+		4B3E180521217BE8002F453D /* ChildProduct(商品详情) */ = {
 			isa = PBXGroup;
 			children = (
 				4B3E180721217BE8002F453D /* ZHBGoodDetailChildProductViewController.h */,
@@ -366,7 +366,7 @@
 				4B3E180921217BE8002F453D /* Model */,
 				4B3E181C21217BE8002F453D /* View */,
 			);
-			path = ChildProduct;
+			path = "ChildProduct(商品详情)";
 			sourceTree = "<group>";
 		};
 		4B3E180921217BE8002F453D /* Model */ = {
@@ -392,13 +392,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		4B3E185921217BE8002F453D /* ChildDetail */ = {
+		4B3E185921217BE8002F453D /* ChildDetail(网页) */ = {
 			isa = PBXGroup;
 			children = (
 				4B3E185A21217BE8002F453D /* ZHBGoodDetailChildDetailViewController.m */,
 				4B3E185B21217BE8002F453D /* ZHBGoodDetailChildDetailViewController.h */,
 			);
-			path = ChildDetail;
+			path = "ChildDetail(网页)";
 			sourceTree = "<group>";
 		};
 		4B3E185C21217BE8002F453D /* GoodDetailContainer */ = {
@@ -1028,6 +1028,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ProductDetailPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1045,6 +1046,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
 				INFOPLIST_FILE = ProductDetailPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
