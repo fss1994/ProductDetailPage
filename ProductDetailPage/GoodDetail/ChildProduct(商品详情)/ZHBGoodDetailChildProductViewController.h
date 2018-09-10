@@ -45,7 +45,7 @@ typedef NS_ENUM(NSUInteger, ChildProductViewScrollType) {
 
 @property (nonatomic, strong) UITableView *productTableView;
 @property (nonatomic, strong) UIScrollView *allContentView;
-@property (nonatomic, weak) <ZHBGoodDetailChildProductViewControllerDelegate>delegate;
+@property (nonatomic, weak) id<ZHBGoodDetailChildProductViewControllerDelegate>delegate;
 - (void)configureWebview:(ZHBGoodDetailWebView *)goodDetailWebView;
 
 @end
